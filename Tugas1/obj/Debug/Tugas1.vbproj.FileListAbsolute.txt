@@ -8,3 +8,4 @@ c:\users\a c e r\onedrive\dokumen\visual studio 2013\Projects\Tugas1\Tugas1\obj\
 c:\users\a c e r\onedrive\dokumen\visual studio 2013\Projects\Tugas1\Tugas1\obj\Debug\Tugas1.exe
 c:\users\a c e r\onedrive\dokumen\visual studio 2013\Projects\Tugas1\Tugas1\obj\Debug\Tugas1.xml
 c:\users\a c e r\onedrive\dokumen\visual studio 2013\Projects\Tugas1\Tugas1\obj\Debug\Tugas1.pdb
+C:\Users\a c e r\OneDrive\Dokumen\Visual Studio 2013\Projects\Tugas1\Tugas1\obj\Debug\Tugas1.Form2.resources
