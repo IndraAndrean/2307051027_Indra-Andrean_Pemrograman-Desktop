@@ -24,16 +24,28 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.NIP = New System.Windows.Forms.Label()
         Me.Nama = New System.Windows.Forms.Label()
-        Me.Fakultas = New System.Windows.Forms.Label()
-        Me.Jurusan = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.labelfakultas = New System.Windows.Forms.Label()
+        Me.labelJurusan = New System.Windows.Forms.Label()
+        Me.txtnip = New System.Windows.Forms.TextBox()
+        Me.txtnama = New System.Windows.Forms.TextBox()
+        Me.cbfakultas = New System.Windows.Forms.ComboBox()
+        Me.cbjurusan = New System.Windows.Forms.ComboBox()
         Me.Process = New System.Windows.Forms.Button()
         Me.kelamin = New System.Windows.Forms.Label()
         Me.rdlaki = New System.Windows.Forms.RadioButton()
         Me.rdperempuan = New System.Windows.Forms.RadioButton()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txttugas = New System.Windows.Forms.TextBox()
+        Me.txtuts = New System.Windows.Forms.TextBox()
+        Me.txtuas = New System.Windows.Forms.TextBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'NIP
@@ -56,69 +68,67 @@ Partial Class Form1
         Me.Nama.TabIndex = 1
         Me.Nama.Text = "Nama"
         '
-        'Fakultas
+        'labelfakultas
         '
-        Me.Fakultas.AutoSize = True
-        Me.Fakultas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Fakultas.Location = New System.Drawing.Point(12, 190)
-        Me.Fakultas.Name = "Fakultas"
-        Me.Fakultas.Size = New System.Drawing.Size(86, 25)
-        Me.Fakultas.TabIndex = 2
-        Me.Fakultas.Text = "Fakultas"
+        Me.labelfakultas.AutoSize = True
+        Me.labelfakultas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelfakultas.Location = New System.Drawing.Point(12, 190)
+        Me.labelfakultas.Name = "labelfakultas"
+        Me.labelfakultas.Size = New System.Drawing.Size(86, 25)
+        Me.labelfakultas.TabIndex = 2
+        Me.labelfakultas.Text = "Fakultas"
         '
-        'Jurusan
+        'labelJurusan
         '
-        Me.Jurusan.AutoSize = True
-        Me.Jurusan.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Jurusan.Location = New System.Drawing.Point(12, 230)
-        Me.Jurusan.Name = "Jurusan"
-        Me.Jurusan.Size = New System.Drawing.Size(83, 25)
-        Me.Jurusan.TabIndex = 3
-        Me.Jurusan.Text = "Jurusan"
+        Me.labelJurusan.AutoSize = True
+        Me.labelJurusan.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelJurusan.Location = New System.Drawing.Point(12, 230)
+        Me.labelJurusan.Name = "labelJurusan"
+        Me.labelJurusan.Size = New System.Drawing.Size(83, 25)
+        Me.labelJurusan.TabIndex = 3
+        Me.labelJurusan.Text = "Jurusan"
         '
-        'TextBox1
+        'txtnip
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(155, 42)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(285, 30)
-        Me.TextBox1.TabIndex = 4
+        Me.txtnip.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtnip.Location = New System.Drawing.Point(155, 42)
+        Me.txtnip.Name = "txtnip"
+        Me.txtnip.Size = New System.Drawing.Size(285, 30)
+        Me.txtnip.TabIndex = 4
         '
-        'TextBox2
+        'txtnama
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(155, 96)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(386, 30)
-        Me.TextBox2.TabIndex = 5
+        Me.txtnama.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtnama.Location = New System.Drawing.Point(155, 96)
+        Me.txtnama.Name = "txtnama"
+        Me.txtnama.Size = New System.Drawing.Size(386, 30)
+        Me.txtnama.TabIndex = 5
         '
-        'ComboBox1
+        'cbfakultas
         '
-        Me.ComboBox1.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"FMIPA", "FKIP", "FEB"})
-        Me.ComboBox1.Location = New System.Drawing.Point(155, 182)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(266, 33)
-        Me.ComboBox1.TabIndex = 6
+        Me.cbfakultas.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.cbfakultas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbfakultas.FormattingEnabled = True
+        Me.cbfakultas.Location = New System.Drawing.Point(155, 182)
+        Me.cbfakultas.Name = "cbfakultas"
+        Me.cbfakultas.Size = New System.Drawing.Size(266, 33)
+        Me.cbfakultas.TabIndex = 6
         '
-        'ComboBox2
+        'cbjurusan
         '
-        Me.ComboBox2.BackColor = System.Drawing.SystemColors.ScrollBar
-        Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Matematika", "Kimia", "Biologi", "Fisika", "Ilmu Komputer"})
-        Me.ComboBox2.Location = New System.Drawing.Point(155, 230)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(323, 33)
-        Me.ComboBox2.TabIndex = 7
+        Me.cbjurusan.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.cbjurusan.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbjurusan.FormattingEnabled = True
+        Me.cbjurusan.Location = New System.Drawing.Point(155, 230)
+        Me.cbjurusan.Name = "cbjurusan"
+        Me.cbjurusan.Size = New System.Drawing.Size(323, 33)
+        Me.cbjurusan.TabIndex = 7
         '
         'Process
         '
         Me.Process.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.Process.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Process.Location = New System.Drawing.Point(155, 287)
+        Me.Process.Location = New System.Drawing.Point(12, 3)
         Me.Process.Name = "Process"
         Me.Process.Size = New System.Drawing.Size(92, 38)
         Me.Process.TabIndex = 8
@@ -159,40 +169,151 @@ Partial Class Form1
         Me.rdperempuan.Text = "Perempuan"
         Me.rdperempuan.UseVisualStyleBackColor = True
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.txtuas)
+        Me.Panel1.Controls.Add(Me.txtuts)
+        Me.Panel1.Controls.Add(Me.txttugas)
+        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Location = New System.Drawing.Point(5, 13)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(762, 341)
+        Me.Panel1.TabIndex = 12
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(7, 276)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(49, 25)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Nilai"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(306, 278)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(53, 25)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "UTS"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(145, 276)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(68, 25)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Tugas"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(467, 276)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(54, 25)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "UAS"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(646, 278)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(102, 25)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "-GRADE-"
+        '
+        'txttugas
+        '
+        Me.txttugas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txttugas.Location = New System.Drawing.Point(216, 276)
+        Me.txttugas.Name = "txttugas"
+        Me.txttugas.Size = New System.Drawing.Size(84, 30)
+        Me.txttugas.TabIndex = 5
+        '
+        'txtuts
+        '
+        Me.txtuts.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtuts.Location = New System.Drawing.Point(365, 278)
+        Me.txtuts.Name = "txtuts"
+        Me.txtuts.Size = New System.Drawing.Size(85, 30)
+        Me.txtuts.TabIndex = 6
+        '
+        'txtuas
+        '
+        Me.txtuas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtuas.Location = New System.Drawing.Point(527, 278)
+        Me.txtuas.Name = "txtuas"
+        Me.txtuas.Size = New System.Drawing.Size(93, 30)
+        Me.txtuas.TabIndex = 7
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.Process)
+        Me.Panel2.Location = New System.Drawing.Point(5, 370)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(762, 45)
+        Me.Panel2.TabIndex = 13
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(570, 361)
+        Me.ClientSize = New System.Drawing.Size(779, 504)
         Me.Controls.Add(Me.rdperempuan)
         Me.Controls.Add(Me.rdlaki)
         Me.Controls.Add(Me.kelamin)
-        Me.Controls.Add(Me.Process)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Jurusan)
-        Me.Controls.Add(Me.Fakultas)
+        Me.Controls.Add(Me.cbjurusan)
+        Me.Controls.Add(Me.cbfakultas)
+        Me.Controls.Add(Me.txtnama)
+        Me.Controls.Add(Me.txtnip)
+        Me.Controls.Add(Me.labelJurusan)
+        Me.Controls.Add(Me.labelfakultas)
         Me.Controls.Add(Me.Nama)
         Me.Controls.Add(Me.NIP)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Panel2)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents NIP As System.Windows.Forms.Label
     Friend WithEvents Nama As System.Windows.Forms.Label
-    Friend WithEvents Fakultas As System.Windows.Forms.Label
-    Friend WithEvents Jurusan As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents labelfakultas As System.Windows.Forms.Label
+    Friend WithEvents labelJurusan As System.Windows.Forms.Label
+    Friend WithEvents txtnip As System.Windows.Forms.TextBox
+    Friend WithEvents txtnama As System.Windows.Forms.TextBox
+    Friend WithEvents cbfakultas As System.Windows.Forms.ComboBox
+    Friend WithEvents cbjurusan As System.Windows.Forms.ComboBox
     Friend WithEvents Process As System.Windows.Forms.Button
     Friend WithEvents kelamin As System.Windows.Forms.Label
     Friend WithEvents rdlaki As System.Windows.Forms.RadioButton
     Friend WithEvents rdperempuan As System.Windows.Forms.RadioButton
+    Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents txtuas As System.Windows.Forms.TextBox
+    Friend WithEvents txtuts As System.Windows.Forms.TextBox
+    Friend WithEvents txttugas As System.Windows.Forms.TextBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
 
 End Class
